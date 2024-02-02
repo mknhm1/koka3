@@ -23,7 +23,12 @@ public class Phone {
         System.out.println(g3.name + " " + g3.year + " " + g3.price);
     }
 
-    
+
+
+
+
+
+
     public void printx1() {
         Info x1 = new Info();
         x1.name = "tesu";
@@ -47,6 +52,9 @@ public class Phone {
         x3.price = "tesu";
         System.out.println(x3.name + " " + x3.year + " " + x3.price);
     }
+
+
+
 
 
     public void printi1() {

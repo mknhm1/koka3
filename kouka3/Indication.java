@@ -7,12 +7,9 @@ public class Indication implements encyclpedia {
 
     public void stert() {
         Indication indication = new Indication();
-        System.out.println("図鑑");
-        System.out.println("検索項目選択");
-        System.out.println("1 発売メーカー");
-        System.out.println("2 発売年");
-        System.out.println("0 終了");
-        System.out.print("番号指定:");
+        Maker maker=new Maker();
+        Year year=new Year();
+        System.out.println("図鑑\n検索項目選択\n1 発売メーカー\n2 発売年\n0 終了\n番号指定");
         Scanner stdIn = new Scanner(System.in);
         int x = Integer.parseInt(stdIn.next());
 
@@ -21,14 +18,14 @@ public class Indication implements encyclpedia {
                 indication.fin();
                 break;
             case 1:
-            Maker maker=new Maker();
             maker.maker();
                 break;
             case 2:
-                // Implement case 2 if needed
+            year.year();
                 break;
+
             default:
-                // Handle default case
+
                 break;
         }
     }

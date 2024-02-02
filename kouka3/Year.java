@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Year {
-    public void maker(){
+    public void year(){
         Indication indication = new Indication();
         Phone phone =new Phone();
         System.out.println("1 2023");
@@ -21,9 +21,9 @@ public class Year {
                 break;
             case 2:
             case 3:
-            phone.printi1();
-            phone.printi2();
-            phone.printi3();
+                phone.printi1();
+                phone.printi2();
+                phone.printi3();
             //     break;
             default:
                 // Handle default case
