@@ -1,26 +1,39 @@
 
-// Indicationクラス: 検索のためのクラス
+/**
+ * Indicationクラス: 検索のためのクラス
+*/
 import java.util.Scanner;
 
-public class Indication  extends ExceptionHandling implements encyclpedia {
-    // 終了メソッド
+public class Indication  extends ExceptionHandling implements Encyclpedia {
+    /**
+     *   終了メソッド
+    */
     public void fin() {
         System.exit(0);
     }
 
-    // 検索メソッド
+    /**
+     * 検索メソッド
+    */
     public void stert() {
-            // インスタンス生成
+        /**
+         *  インスタンス生成
+         */
+           
             Indication indication = new Indication();
             Maker maker = new Maker();
             Year year = new Year();
 
-            // ユーザーに対するメニュー表示
+            /**
+             * ユーザーに対するメニュー表示
+             */
             System.out.println("図鑑\n検索項目選択\n1 発売メーカー\n2 発売年\n0 終了\n番号指定");
             Scanner stdIn = new Scanner(System.in);
 
             int x = -1;
-            // 入力が数字でない場合や範囲外の場合の例外処理
+            /**
+             * 入力が数字でない場合や範囲外の場合の例外処理
+             */
             while (x < 0 || x > 2) {
                 try {
                     x = Integer.parseInt(stdIn.next());
@@ -36,16 +49,27 @@ public class Indication  extends ExceptionHandling implements encyclpedia {
 
             switch (x) {
                 case 0:
-                    indication.fin(); // 終了メソッド呼び出し
+                /**
+                 *  終了メソッド呼び出し
+                 */
+                    indication.fin();
                     break;
                 case 1:
-                    maker.maker(); // Makerクラスのメーカーメソッド呼び出し
+                /**
+                 * Makerクラスのメーカーメソッド呼び出し
+                 */
+                    maker.maker();
                     break;
                 case 2:
-                    year.year(); // Yearクラスの年メソッド呼び出し
+                /**
+                 * Yearクラスの年メソッド呼び出し
+                 */
+                    year.year();
                     break;
                 default:
-                    // 未定義の入力に対する処理
+                /**
+                 * 未定義の入力に対する処理
+                 */
                     break;
             }
         }

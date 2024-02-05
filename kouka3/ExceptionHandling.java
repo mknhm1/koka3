@@ -1,6 +1,6 @@
 import java.util.Scanner;
 // ExceptionHandling class
-class ExceptionHandling {
+class ExceptionHandling extends Exception{
     public void handleException(String message) {
         System.out.println(message);
         Scanner stdIn = new Scanner(System.in);
