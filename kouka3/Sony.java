@@ -1,37 +1,48 @@
-public class Sony{
+// Infoクラスを拡張したSonyクラス
+public class Sony extends Info {
+
+    // Xperia 1Vに関する情報を表示するメソッド
     public void xperia2023() {
-        Info x1 = new Info();
-        x1.name = "Xperia 1V";
-        x1.year = "2023";
-        x1.price = "tesu";
-        System.out.println(x1.name + " " + x1.year + " " + x1.price);
+        this.name = "Xperia 1V　";
+        this.year = "2023年";
+
+        // モデル名と発売年を表示
+        System.out.println(this.name + " " + this.year);
     }
+
+    // Xperia 1IVに関する情報を表示するメソッド
     public void xperia2022() {
-        Info x1 = new Info();
-        x1.name = "Xperia 1IV";
-        x1.year = "2022";
-        x1.price = "tesu";
-        System.out.println(x1.name + " " + x1.year + " " + x1.price);
+        this.name = "Xperia 1IV";
+        this.year = "2022年";
+
+        // モデル名と発売年を表示
+        System.out.println(this.name + " " + this.year);
     }
+
+    // Xperia 1Ⅲに関する情報を表示するメソッド
     public void xperia2021() {
-        Info x2 = new Info();
-        x2.name = "Xperia 1Ⅲ";
-        x2.year = "2021";
-        x2.price = "tesu";
-        System.out.println(x2.name + " " + x2.year + " " + x2.price);
+        this.name = "Xperia 1Ⅲ　";
+        this.year = "2021年";
+
+        // モデル名と発売年を表示
+        System.out.println(this.name + " " + this.year);
     }
+
+    // Xperia 1Ⅱに関する情報を表示するメソッド
     public void xperia2020() {
-        Info x3 = new Info();
-        x3.name = "Xperia 1Ⅱ";
-        x3.year = "2020";
-        x3.price = "tesu";
-        System.out.println(x3.name + " " + x3.year + " " + x3.price);
-    }  
+        this.name = "Xperia 1Ⅱ　";
+        this.year = "2020年";
+
+        // モデル名と発売年を表示
+        System.out.println(this.name + " " + this.year);
+    }
+
+    // Xperia 1に関する情報を表示するメソッド
     public void xperia2019() {
-        Info x1 = new Info();
-        x1.name = "Xperia 1";
-        x1.year = "2019";
-        x1.price = "tesu";
-        System.out.println(x1.name + " " + x1.year + " " + x1.price);
+        this.name = "Xperia 1　　";
+        this.year = "2019年";
+
+        // モデル名と発売年を表示
+        System.out.println(this.name + " " + this.year);
     }
 }
